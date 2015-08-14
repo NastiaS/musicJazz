@@ -1,0 +1,25 @@
+* {
+  box-sizing: border-box; }
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  text-align: center; }
+
+.instructions {
+  font-family: 'Pacifico';
+  text-align: center; }
+
+img {
+  width: 25%;
+  display: inline; }
+
+.ofCourse {
+  float: left;
+  width: 14%;
+  border-radius: 30%;
+  position: relative;
+  margin-top: -11px; }
+
+.col-xs-6 {
+  padding: 5px;
+}

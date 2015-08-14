@@ -1,0 +1,7 @@
+<div>
+    <div ng-click="bringTopTracks(tracks.id)">{{tracks.name}}</div>
+    <div ng-click="bringInfo(tracks.name)">Bring Info</div>
+    {{bio}}
+    {{artistImage}}
+    <div ng-repeat="song in display" ng-click="playSong(song.url)"> Name: {{song.name}}</div>
+</div>    

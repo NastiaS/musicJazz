@@ -1,0 +1,29 @@
+<div>
+   <form ng-submit="getName(name)">
+      <div class="jumbotron">
+         <h1>Search for an Artist</h1>
+         <p class="instructions">Explore the world of jazz. Type in a name and see if there is any jazz musician with this name. Then, click on the image and explore his/her story while playing 30 seconds preview of their top tracks</p>
+         <div class="search-form">
+            <div class="row">
+               <div class="col-lg-11">
+                  <div class="input-group">
+                     <span class="input-group-addon"></span>
+                     <input type="text" class="form-control"type="text" ng-model="name" />
+                  </div>
+               </div>
+               <input type="submit" id="search" button type="button" class="btn btn-success" value="Search" />
+            </div>
+         </div>
+      </div>
+      <div class="results">
+         <div class="results" ng-repeat="a in art">
+            <div>
+               <div class="col-xs-6" class="nameOfArtist">
+                  <div class="col-xs-6"> Name: {{a.name}}</div>
+                  <div class="col-xs-6"><img class="img-responsive center-block" ng-src="{{a.image}}" err-src="http://img1.wikia.nocookie.net/__cb20130607215218/mummipedia/images/b/bb/480px-Placeholder.png" ui-sref ='artist({artist: a.name})'></div>
+               </div>
+            </div>
+         </div>
+      </div>
+   </form>
+</div>
